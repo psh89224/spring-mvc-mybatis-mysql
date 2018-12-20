@@ -1,0 +1,7 @@
+CREATE DATABASE seedplus CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+CREATE TABLE `seedplus`.`simple_comment` (
+ `comment_no` INT NOT NULL AUTO_INCREMENT,
+ `text` TEXT NOT NULL,
+ `datetime` DATETIME NOT NULL  DEFAULT now(),
+ PRIMARY KEY (`comment_no`));
